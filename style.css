@@ -1,89 +1,266 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    overflow-y: hidden;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.background{
-width: 100%;
-height:100vh;
-position: absolute;
-
-background:url(img/11_background.png);
+    margin: 0px;
+    padding: 0px;
 
 }
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/11_background.png);
+    background-size: 100vw 100%;
+    background-position:0px 0px;
+    animation: backani 8s linear infinite;
+ 
 
+}
 .distantcloud{
     width: 100%;
     height: 80vh;
     position: absolute;
-    background-image: url(img/10_distant_clouds.png);
-    bottom: 60vh;  
-}
-.distantcloud1{
-    width: 100%;
-    height: 80vh;
-    position: absolute;
     background-image: url(img/09_distant_clouds1.png);
-    bottom: 48vh;  
+    bottom: 30vh;  
+    
 }
 .cloud{
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 80vh;
+    position: absolute;
     background-image: url(img/08_clouds.png); 
-    top:5vh;
+    bottom:23vh;
+    
   
 }
-
 .hill{
     width: 100%;
     height: 130%;
     background-image: url(img/05_hill1.png); 
     background-size: cover;
     position: absolute;
-    bottom: 30vh;
+    bottom: 28vh;
+    
     
 }
 .distantTrees{
     width: 100%;
-    height: 117%;
+    height: 120%;
     background-image: url(img/03_distant_trees.png); 
     background-size: cover;
     position: absolute;
-    bottom: 30vh;
+    bottom: 37vh;
     
 }
-.trees{
-    width: 100%;
-    height: 125%;
-    background-image: url(img/02_trees\ and\ bushes.png); 
-    background-size: cover;
-    position: absolute;
-    bottom: 30vh;
-    
-}
-.ground{
-    width: 100%;
-    height: 142%;
-    background-image: url(img/01_ground.png); 
-    background-size: cover;
-    position: absolute;
-    bottom: 15vh;
-
-}
-
 .bushes{
     width: 100%;
-    height: 125%;
+    height: 115%;
     background-image: url(img/04_bushes.png); 
     background-size: cover;
     position: absolute;
-    bottom: -1vh;
+    bottom: 40vh;
+ 
+}
     
+    .trees{
+        width: 100vw;
+        height: 135%;
+        background-image: url(img/02_trees\ and\ bushes.png); 
+        background-size: cover;
+        background-repeat: repeat-x;
+        position: absolute;
+        bottom: 20vh;
+       
+    }
+    .ground{
+        width: 100%;
+        height: 148vh;
+        background-image: url(img/01_ground.png); 
+        background-size: cover;
+        position: absolute;
+        background-repeat: repeat-x;
+        bottom: 6vh;
+       
+      
+    }
+    .idle{
+        width: 20%;
+        height: 40%;
+        background-image: url(img/idle.gif); 
+        background-size: cover;
+        position: absolute;
+        bottom: 12vh;
+        right:70vw;
+    }
+
+    .obstacle{
+        width: 10%;
+        height: 15%;
+        background-image: url(img/dragon.png); 
+        background-size: cover;
+        position: absolute;
+        bottom: 18vh;
+        right:10vw;
+    }
+    
+    
+.groundbushes{
+    width: 100%;
+    height: 115%;
+    background-image: url(img/04_bushes.png); 
+    background-size: cover;
+    position: absolute;
+    bottom: 0vh;
+       
+}
+
+
+.game-starter{
+    width: 50%;
+    height: 20vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30vw;
+    transform: translateY(-50%);
+    background:rgba(0, 0,0,0.8);
+    line-height: 40vh;
+}
+.game-starter h2{
+    text-align: center;
+    font-size: 30px;
+    color: silver;
+
+}
+#counter{
+    font-size: 40px;
+    color: aqua;
+
+}
+
+
+
+/* animation for moving img */
+
+@keyframes backani {
+    100%{
+        background-position:100vw 0px;
+    }
+    
+}
+@keyframes cloudani {
+    100%{
+        background-position:100vw 0px;
+    }
+    
+}
+@keyframes cloudanimation {
+    100%{
+        background-position:100vw 0px;
+    }
+    
+}
+@keyframes hillani {
+    100%{
+        background-position:100vw 0px;
+    }
+}
+@keyframes distanttreeani {
+    100%{
+        background-position:100vw 0px;
+    }
+}
+@keyframes bushesani {
+    100%{
+        background-position:100vw 0px;
+    }
+}
+@keyframes treeani {
+    100%{
+        background-position:100vw 0px;
+    }
+}
+
+@keyframes groundani {
+    100%{
+        background-position:100vw 0px;
+    }
+    
+}
+@keyframes obstacleani {
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:-10vw;
+        
+    }
+    
+}
+
+@keyframes groundbushesani {
+    100%{
+        background-position:100vw 0px;
+    }
+}
+
+
+.cloudanimation{
+    animation: cloudanimation linear 16s infinite;
+    
+}
+.cloudani{
+    animation: cloudani linear 12s infinite;
+    
+}
+.hillani{
+    animation: hillani linear 10s infinite;
+    
+}
+.distanttreeani{
+    animation: distanttreeani 10s linear infinite;
+    
+}
+.bushesani{
+    animation: bushesani 9s linear infinite;
+    
+}
+.treeani{
+    animation: treeani 6s linear infinite;
+    
+}
+.groundani{
+    animation: groundani linear 4s infinite;
+    
+}
+.obstacleani{
+    animation: obstacleani linear 5s infinite;
+    
+}
+.groundbushesani{
+    animation: groundbushesani 3s linear infinite;
+    
+}
+
+
+/* for jumping  */
+
+.idlejumpani{
+    animation: idlejump 0.6s linear;
+}
+
+@keyframes idlejump {
+    0%{
+       bottom:0;
+    }
+    50%{
+       bottom:377px;
+    }
+    100%{
+      bottom:0;
+    }
 }
