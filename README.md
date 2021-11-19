@@ -12,9 +12,9 @@
 - By using onkeydown function done with player's jump activity.🤾
 - added obstacle who moves towords players.🏃🐉
 
-## DAY 3:
+## DAY 3:🙂
 - Done with player's movements with help of window.getcomputedstyle()
-- Trying to find out collusion and once collusion is detected,display   GameOver.
+- Trying to find out collusion and once collusion is detected then display GameOver.
 
 
 
