@@ -8,6 +8,10 @@ html,body{
     height: 100%;
     overflow: hidden;
 }
+.gameover h2{
+    visibility: hidden;
+}
+
 .container{
     position: absolute;
     width: 100vw;
@@ -93,7 +97,7 @@ html,body{
         background-size: cover;
         position: absolute;
         bottom: 12vh;
-        right:70vw;
+        right:80vw;
     }
 
     .obstacle{

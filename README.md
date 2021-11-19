@@ -12,6 +12,10 @@
 - By using onkeydown function done with player's jump activity.🤾
 - added obstacle who moves towords players.🏃🐉
 
+## DAY 3:
+- Trying to find out collusion and once collusion is there display msg GameOver.
+
+
 
   
 
