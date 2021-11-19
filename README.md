@@ -13,7 +13,8 @@
 - added obstacle who moves towords players.🏃🐉
 
 ## DAY 3:
-- Trying to find out collusion and once collusion is there display msg GameOver.
+- Done with player's movements with help of window.getcomputedstyle()
+- Trying to find out collusion and once collusion is detected,display   GameOver.
 
 
 
